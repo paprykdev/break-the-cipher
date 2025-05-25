@@ -1,5 +1,5 @@
 <template>
-    <header><NuxtLink to="/">BREAK THE CIPHER</NuxtLink></header>
+    <Header />
     <main>
         <slot />
     </main>

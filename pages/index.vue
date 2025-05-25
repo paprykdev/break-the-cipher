@@ -1,6 +1,6 @@
 <template>
     <Form @submit.prevent="breakCipher(input)">
-        <Input v-model="input" />
+        <Input v-model="input" placeholder="Podaj zaszyfrowany tekst" />
         <Button>Rozwiąż</Button>
     </Form>
 </template>

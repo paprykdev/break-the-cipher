@@ -42,7 +42,7 @@ const breakCipher = (obfuscatedSentence: string) => {
             .filter((e: string) => e != '');
 
         shiftedWords.forEach(async (word: string) => {
-            if (data.includes(word)) {
+            if (data.includes(word.toLowerCase())) {
                 found = true;
                 toast.add({
                     title: 'Znaleziono!',
@@ -58,10 +58,8 @@ const breakCipher = (obfuscatedSentence: string) => {
                 });
             }
         });
-        if (found) break;
+        if (found) return i;
     }
-    if (found) return;
-
     input.value = '';
 
     toast.add({

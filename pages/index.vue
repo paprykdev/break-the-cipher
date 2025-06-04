@@ -67,5 +67,7 @@ const breakCipher = (obfuscatedSentence: string) => {
         description: 'Nie znaleziono przesunięcia',
         color: 'error',
     });
+
+    return undefined;
 };
 </script>
